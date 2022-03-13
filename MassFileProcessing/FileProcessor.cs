@@ -63,7 +63,7 @@ namespace MassFileProcessing
                         var stringReverser = new StringReverser(line);
                         _lines[j] = stringReverser.Reverse();
 
-                        if (j % 5 == 0)
+                        if (j % 1 == 0)
                         {
                             var p = (float) (j + 1) / _lines.Length * 100;
                             Worker.ReportProgress((int) p, _updater);
